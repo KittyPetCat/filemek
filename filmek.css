@@ -46,6 +46,8 @@ li {
     border-bottom: 1px solid #eee;
     font-size: 1.08em;
     position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 li:hover {

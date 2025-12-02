@@ -46,8 +46,8 @@
             });
             movies.filter(m => favorites.includes(m.id)).forEach(movie => {
                 const li = document.createElement('li');
-                li.innerHTML = `<span class="movietitle">${movie.title} <span class='movieinfo'>(${movie.year}) - ${movie.genre}</span></span> <span class="star filled" title="Eltávolítás">★</span>`;
-                li.querySelector('.star').onclick = () => {
+                li.innerHTML = `<span class=\"movietitle\">${movie.title} <span class='movieinfo'>(${movie.year}) - ${movie.genre}</span></span> <span class=\"star filled\" title=\"Eltávolítás\">★</span>`;
+                li.onclick = () => {
                     favorites = favorites.filter(id => id !== movie.id);
                     renderLists();
                 };
