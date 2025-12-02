@@ -37,7 +37,7 @@
                 if (!favorites.includes(movie.id)) {
                     const li = document.createElement('li');
                     li.innerHTML = `<span class="movietitle">${movie.title} <span class='movieinfo'>(${movie.year}) - ${movie.genre}</span></span> <span class="star" title="Kedvencbe">☆</span>`;
-                    li.querySelector('.star').onclick = () => {
+                    li.onclick = () => {
                         favorites.push(movie.id);
                         renderLists();
                     };
