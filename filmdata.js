@@ -15,3 +15,5 @@ const movies = [
   {"id":14,"title":"Gladiátor","year":2000,"genre":"Akció"},
   {"id":15,"title":"Toy Story","year":1995,"genre":"Animáció"}
 ];
+    
+
