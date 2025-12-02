@@ -6,16 +6,18 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
+    margin-left: 40px;
     color: #333;
 }
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 40px;
     margin-top: 40px;
+    margin-left: 40px;
 }
 
 .column {
@@ -38,11 +40,26 @@ ul {
 
 li {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     font-size: 1.08em;
+    position: relative;
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+li:hover .movietitle {
+    color: #504f4e;
+}
+
+.movietitle {
+    flex: 1 1 auto;
+    text-align: left;
+    font-weight: bold;
 }
 
 .star {
@@ -50,12 +67,32 @@ li {
     font-size: 1.3em;
     color: #bbb;
     transition: color 0.2s;
+    margin: 0 10px;
 }
 
 .star:hover, .star.filled {
-    color: #f7c948;
+    color: #b8860b;
 }
 
 .star.filled {
     text-shadow: 0 0 4px #f7c94899;
+}
+
+.itemnum {
+    display: none;
+}
+
+.count {
+    float: right;
+    color: #bbb;
+    font-size: 0.95em;
+    margin-left: 8px;
+    opacity: 0.7;
+}
+
+.movieinfo {
+    color: #888;
+    font-size: 0.97em;
+    margin-left: 6px;
+    font-style: italic;
 }
