@@ -30,7 +30,8 @@
             moviesList.innerHTML = '';
             favoritesList.innerHTML = '';
             // Filmek száma
-            moviesCount.textContent = movies.length;
+            const notFavoriteCount = movies.filter(movie => !favorites.includes(movie.id)).length;
+            moviesCount.textContent = notFavoriteCount;
             // Kedvencek száma
             favoritesCount.textContent = favorites.length;
             movies.forEach((movie) => {
